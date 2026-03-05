@@ -13,7 +13,8 @@ Check if glance is available:
 which glance
 ```
 
-If missing, use `uvx --from glancecli glance` as the prefix for all glance commands (e.g. `cmd 2>&1 | uvx --from glancecli glance`).
+<!-- SECURITY: version is pinned to prevent supply chain attacks. Update deliberately after reviewing the diff. -->
+If missing, use `uvx --from 'glancecli==0.1.4' glance` as the prefix for all glance commands (e.g. `cmd 2>&1 | uvx --from 'glancecli==0.1.4' glance`).
 
 **First time:** run `glance help` to learn the full interface.
 
